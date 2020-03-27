@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: none;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+
+}
+
+.primary-color {
+    color: rgb(102, 255, 122);
+}
+
+.sec-color {
+    color: rgb(255, 92, 168);
+}
+
+#navbar {
+    /* display: flex; */
+    /* justify-content: center; */
+    color: rgb(236, 236, 236);
+    background-color: rgb(51, 51, 51);
+    padding: 1rem 1.5rem 0.5rem 2rem;
+    z-index: 1;
+    position: sticky;
+    top:0;
+    /* opacity: 0.8; */
+
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    /* color: rgb(236, 236, 236); */
+    /* background-color: rgb(39, 39, 39); */
+    /* padding: 0.75rem; */
+    /* z-index: 2; */
+    /* width: 1000px; */
+    flex-wrap: wrap;
+    
+}
+
+#navbar .container .left-part h1 a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#navbar .container .right-part ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+
+#navbar .container .right-part ul li {
+    margin: 0.4rem;
+    
+}
+
+#navbar .container .right-part ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+
+}
+
+#navbar .container .right-part ul li a:hover {
+    background-color: rgb(102, 255, 122);
+
+}
+
+#navbar .container .right-part ul li a:active {
+    color: rgb(16, 17, 17);
+    background-color: rgb(223, 223, 223);
+
+}
+
+#showcase {
+    background-color: rgb(44, 44, 44);
+    background: url('../image_resources/showcase.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+
+}
+
+#showcase .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(39, 39, 39, 0.322);
+    line-height: 1.3;
+    /* max-height: 100vh; */
+}
+
+#showcase .container .sh-heading h1 {
+    margin-bottom: 4.5rem;
+    font-size: 5rem;
+
+}
+
+#showcase .container .sh-p {
+    margin: 0 6rem;
+    font-size: 1.3rem;
+
+}
+
+#showcase .container .btn {
+    text-decoration: none;
+    margin-top: 1.5rem;
+    color: rgb(231, 231, 231);
+    background-color: rgba(102, 255, 122, 0.473);
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+}
+
+#showcase .container .btn:hover {
+    background-color: rgba(102, 255, 122, 0.712);
+}
+
+#showcase .container .btn:active {
+    color: rgb(16, 17, 17);
+    background-color: rgba(223, 223, 223, 0.712);
+}
+
+/* what we do */
+
+#what .container {
+    max-width: 1100px;
+    text-align: center;
+    font-size: 15px;
+    overflow: hidden;
+    padding: 0 1rem;
+    line-height: 1.3rem;
+    margin: auto;
+}
+
+#what .container #h2 {
+    margin-top: 1rem;
+}
+
+#what .container .items {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    line-height: 1.3rem;
+}
+
+#what .container .items .item {
+    flex: 1;
+
+}
+
+#what .container .items .item i {
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: rgb(102, 255, 122);
+    /* margin-bottom: 100rem; */
+}
+
+#what .container .items .item h2 {
+    margin: 0.6rem 0;
+}
+
+#who {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#who .content {
+    flex: 1;
+}
+
+#who .who-img {
+    background: url('../image_resources/people.jpg') no-repeat center center/cover;
+}
+
+#who .who-txt {
+    background-color: rgb(51, 51, 51);
+    color: rgb(201, 201, 201);
+    /* padding: 1rem; */
+}
+
+#who .who-txt h2, #who .who-txt p, #who .who-txt h3, #who .who-txt, #who .who-txt ul li {
+    padding: 0.75rem;
+}
+
+#who .who-txt ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+#who .who-txt ul li {
+    border-bottom: rgb(134, 134, 134) 1px dotted;
+}
+
+#clients .clients-txt {
+    text-align: center;
+    padding: 1rem;
+}
+
+#clients .clients-logo {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+#clients .clients-logo img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+#contact {
+    display: flex;
+}
+
+#contact .content {
+    flex: 1;
+}
+
+#contact .contact-form {
+    background: rgb(102, 255, 122);
+    color: white;
+    font-size: 23px;
+}
+
+#contact .contact-form .sup-form {
+    margin: 2rem;
+}
+
+#contact .contact-form form {
+    margin: 2.5rem;
+
+}
+
+#contact .contact-form form label {
+    display: block;
+    margin: 0.3rem;
+
+}
+
+#contact .contact-form form input, #contact .contact-form form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#contact .contact-form form textarea {
+    height: 7rem;
+}
+
+.bk-ground {
+    color: rgb(236, 236, 236);
+    background-color: rgb(51, 51, 51);
+    padding: 2rem;
+    text-align: center;
+}
+
+.black-btn {
+    color: rgb(236, 236, 236);
+    background-color: rgb(51, 51, 51);
+    margin: 1rem auto;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.black-btn:hover {
+    background: rgb(255, 92, 168);
+}
+
+.black-btn:active {
+    color: black;
+    background: whitesmoke;
+
+}
